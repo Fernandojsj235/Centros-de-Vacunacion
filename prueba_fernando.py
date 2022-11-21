@@ -17,11 +17,13 @@ image = Image.open('iamgenCV.jpg')
 st.image(image, caption='Centro de vacunación en Lima', use_column_width=True)
         
 st.header("Dataset MINSA")
-!wget http://server01.labs.org.pe:2005/TB_CENTRO_VACUNACION.csv
-pd.read_csv("TB_CENTRO_VACUNACION.csv")
-
-df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
-    columns=['lat', 'lon'])
-
-st.map(df)
+@st.experimental_memo
+def download_data():
+   url=http://server01.labs.org.pe:2005/TB_CENTRO_VACUNACION.csv
+   filename="TB_CENTRO_VACUNACION.csv"
+   urllib.request.urlretrieve(url,filename)
+   df=pd.read_csv('TB_CENTRO_VACUNACION.csv')
+   return df
+        
+    
+                
