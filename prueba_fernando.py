@@ -19,7 +19,7 @@ st.image(image, caption='Centro de vacunación en Lima', use_column_width=True)
 st.header("Dataset MINSA")
 @st.experimental_memo
 def download_data():
-   url=https://raw.githubusercontent.com/Fernandojsj235/Centros-de-Vacunacion/main/TB_CENTRO_VACUNACION%20(5).csv
+   url= "https://raw.githubusercontent.com/Fernandojsj235/Centros-de-Vacunacion/main/TB_CENTRO_VACUNACION%20(5).csv"
    filename="TB_CENTRO_VACUNACION%20(5).csv"
    urllib.request.urlretrieve(url,filename)
    df=pd.read_csv('TB_CENTRO_VACUNACION%20(5).csv')
