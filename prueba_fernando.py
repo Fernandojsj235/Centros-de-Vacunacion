@@ -28,8 +28,8 @@ def download_data():
 download_data()
 st.dataframe(download_data())
 
-df = pd.DataFrame(columns=['latitud','longitud'])
-st.map(["latitud","longitud"])
+df = pd.DataFrame(['latitud','longitud'])
+st.map(df)
         
     
                 
