@@ -28,8 +28,13 @@ def download_data():
 download_data()
 st.dataframe(download_data())
 
-df = pd.DataFrame(['latitud','longitud'])
+#st.map(data=None, zoom=None, use_container_width=True)
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=['lat', 'lon'])
+
 st.map(df)
+
         
     
                 
