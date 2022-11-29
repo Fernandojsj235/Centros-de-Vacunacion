@@ -9,8 +9,8 @@ import base64
 st.title("Grupo 1")
 st.markdown("""El grupo número 1 está conformado por estudiantes de la Carrera Profesional de Ingeniería Ambiental de la Univerisdad Peruana Cayetano Heredia:""")
 from PIL import Image
-image = Image.open('Fernando.jpeg')
-st.image(image, caption='Fernando Jara', use_column_width=True)
+image = Image.open('Fernando.jpeg',"Jose.jpeg","Nancy.jpeg","Josselyn.jpeg")
+st.image(image, caption='Fernando Jara',"Jose Vega", "Nancy Perez", "Josselyn Santi" use_column_width=True)
 
 st.title('Centros de vacunación')
 
