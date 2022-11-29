@@ -6,6 +6,8 @@ import numpy as np
 import altair as alt
 import urllib.request
 import base64
+st.title("Grupo 1")
+st.markdown("""El grupo número 1 está conformado por:""")
 
 st.title('Centros de vacunación')
 
