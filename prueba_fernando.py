@@ -9,8 +9,8 @@ import base64
 st.title("Grupo 1")
 st.markdown("""El grupo número 1 está conformado por:""")
 from PIL import Image
-image = Image.open('iamgenCV.jpg')
-st.image(image, caption='Centro de vacunación en Lima', use_column_width=True)
+image = Image.open('Fernando.jpeg')
+st.image(image, caption='Fernando Jara', use_column_width=True)
 
 st.title('Centros de vacunación')
 
